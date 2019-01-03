@@ -130,6 +130,11 @@ p {
     border: 1px solid white;
     width: 50%;
   }
+  .col-md-12{
+    float: left;
+    border: 1px solid white;
+    width: 100%;
+  }
 
 }
 
