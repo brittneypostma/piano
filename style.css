@@ -7,14 +7,15 @@
   text-align: center;
 }
 body {
-  background-color: #575757;
+  background-image: linear-gradient(gray, black);
+  opacity: .95;
 }
 
 h1 {
   color: #111111;
   position: relative;
   margin-bottom: 15px;
-  font-size: 20px;
+  font-size: 170%;
 }
 
 h1:hover {
@@ -23,14 +24,14 @@ h1:hover {
   }
 
 .container {
-  background-image: linear-gradient(red, yellow);
+  background-image: linear-gradient(white, gray);
   box-shadow: -10px -10px .4em black;
-  width: 90%;
-  height: 1000px;
+  width: 95%;
+  height:1000px;
+  padding: 0px;
   margin-right: auto;
   margin-left: auto;
   color: white;
-  font-size: 20px;
   position: relative;
 }
 
@@ -44,7 +45,7 @@ p {
   margin: 10px;
   border: 1px dotted black;
   display: inline-block;
-  background-image: linear-gradient(red, yellow);
+  background-image: linear-gradient(#424242, grey);
   box-shadow: -5px -5px .4em black;
 }
 
@@ -54,6 +55,8 @@ p {
   box-shadow: -5px -5px .4em black;
   padding: 5px;
   height: auto;
+  margin: 0px;
+  left: 5px;
 }
 
  .chicken {
