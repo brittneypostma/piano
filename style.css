@@ -41,7 +41,7 @@ h1:hover {
 
 p {
   font-size: 20px;
-  text-align: center;
+  text-align: left;
   margin: 10px;
   border: 1px dotted black;
   display: inline-block;
