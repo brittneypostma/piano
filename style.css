@@ -57,7 +57,6 @@ p {
 }
 
  .chicken {
-  font-size: 20px;
   position: relative;
   color: black;
   float: left;
@@ -79,7 +78,6 @@ p {
   height: auto;
 }
 .beef {
-  font-size: 20px;
   position: relative;
   color: black;
   float: left;
@@ -101,7 +99,6 @@ p {
 }
 
 .sushi {
-  font-size: 20px;
   position: relative;
   color: black;
   float: left;
