@@ -23,7 +23,7 @@ h1:hover {
   }
 
 .container {
-  background-image: linear-gradient(white, gray);
+  background-image: linear-gradient(red, yellow);
   box-shadow: -10px -10px .4em black;
   width: 90%;
   height: 1000px;
