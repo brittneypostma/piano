@@ -19,7 +19,7 @@ function submitForm() {
     let firstName = document.getElementById("firstName").value;
     let lastName = document.getElementById("lastName").value;
     let location = document.getElementById("location").value;
-    let checkIn = document.getElementById(s"checkIn").value;
+    let checkIn = document.getElementById("checkIn").value;
     if (firstName != '') {
     if (lastName != '') {}
     if (location != '') {}
