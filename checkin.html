@@ -1,0 +1,132 @@
+ <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href= "style.css">
+        <link href="https://fonts.googleapis.com/css?family=Rouge+Script|Schoolbell" rel="stylesheet">
+        
+
+        <!-- BootstrapValidator CSS -->
+        <link rel="stylesheet" href="http://cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"/>
+
+      
+
+        <!-- BootstrapValidator JS -->
+        <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
+        <script type="text/javascript" src="validation-functions.js"></script>
+        <title>Waukazoo Check In</title>
+    </head>
+    
+<body>
+         
+    <header class="header">
+       
+            <div class=logoimg" style="text-align: right;">
+                <img src="../imgs/logo.png" class="logo" alt="logo" style="width:300px; height:300px">
+            </div>
+            <div class="top">
+            <h1 class="welcome">Welcome!</h1><br/>
+            <h1 class="school">Waukazoo Elementary<br/><span class="visitor">Visitor Check In</span></h1>
+            
+            
+        </div>
+    </header> 
+
+
+  <div class="container" id="formArea" style="text-align: center;">
+
+  
+  <form class="form-horizontal" role="form" id="test-form">
+    <div class="form-group">
+      <label class="col-lg-3 control-label">Last Name</label>
+      <div class="col-lg-3 inputGroupContainer">
+        <div class="input-group">
+          <input type="text" class="form-control" name="Last-Name" id="text" placeholder="Last Name"/>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-lg-3 control-label">First Name</label>
+      <div class="col-lg-3 inputGroupContainer">
+        <div class="input-group">
+          <input type="text" class="form-control" name="First-Name" id="text" placeholder="First Name"/>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-lg-3 control-label">Student's Name</label>
+      <div class="col-lg-3 inputGroupContainer">
+        <div class="input-group">
+          <input type="text" class="form-control" name="Student" id=="text" placeholder="First & Last"/>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-lg-3 control-label">Time In</label>
+      <div class="col-lg-3 inputGroupContainer">
+        <div class="input-group col-lg-10">
+          <input type="time" class="form-control" name="Time-In" id="checkIn"/>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-lg-3 control-label">Teacher's name or location visiting</label>
+        <div class="col-lg-3 inputGroupContainer">
+          <div class="input-group col-lg-10">
+            <input list="location" class="form-control" type="text" name="Location" id="location" placeholder="Teacher Name or location"/>
+          </div>
+        </div>
+      </div>
+
+    <div class="form-group">
+      <label class="col-lg-3 control-label">Notes</label>
+      <div class="col-lg-3 inputGroupContainer">
+        <div class="input-group col-lg-10">
+          <textarea type="text" class="form-control" name="notes" placeholder="Comments" rows="4" style="resize: vertical;"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-lg-9 col-lg-offset-3">
+        <button type="submit" class="btn btn-default" id="postForm">Submit</button>
+      </div>
+    </div>
+
+  </form>
+
+  </div>
+</body>
+    
+    <footer>
+                <div class="footer">
+                   <aside class="left" style="text-align: left">
+                   <button type="button" id="admin">
+                       <a href="admin.html"><img src="../imgs/lock.png" alt="lock" style="width: 25px; height: 25px;"></a>
+                   </button>
+                   </aside>
+                   <aside class="center" style="text-align: center">
+                       <img src="../imgs/wo.png" alt="west ottawa logo" style="width: 80px; height: 40px;">
+                   </aside>
+                   <aside class="right" style="text-align: right">
+                       <button type="button" id="help">
+                           <a href="help.html"><img src="../imgs/help.png" alt="help" style="width: 30px; height: 30px;"></a>
+                       </button>
+                   </aside>
+               </div>
+           
+    <script src="validation-functions.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    
+    </footer>
+
+</html>
+    
+ 
+ 
