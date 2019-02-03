@@ -195,7 +195,7 @@ body{
 
 input[type=text] {
     width: 25%;
-    height:40px;
+    height:35px;
     padding:5px;
     margin-bottom:5px;
     margin-top:5px;
@@ -209,7 +209,7 @@ input[type=text] {
 
 input[type=time] {
     width: 25%;
-    height:40px;
+    height:35px;
     padding:5px;
     margin-bottom:5px;
     margin-top:5px;
@@ -221,9 +221,9 @@ input[type=time] {
 
 textarea[type=text] {
     width: 25%;
-    height:40px;
+    height:35px;
     padding:5px;
-    margin-bottom:5px;
+    margin-bottom:0px;
     margin-top:5px;
     border:2px solid #ccc;
     color:#4f4f4f;
@@ -241,15 +241,15 @@ button[type=submit] {
     font-weight:700;
     cursor:pointer;
     border-radius:5px;
-    margin-top: 15px;
+    margin-top: 10px;
     padding:10px 0;
     outline:none
     }
 
 #test-form{
     background-color: #111;
-    margin-top: 70px;   
-
+    margin-top: 5px;  
+    
 }
 
 .checkOutDiv {
@@ -267,4 +267,14 @@ button[type=submit] {
 .checkOut>input {margin-top:15px; height:30px}
 
 
+.back {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+}
 
+.backLink {
+text-decoration: none;
+    color: whitesmoke;
+
+}
