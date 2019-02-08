@@ -74,74 +74,26 @@ body{
 
 .checkIn {
     grid-column: 1/2;
-    text-align: center;
-    align-self: center;
-    height: 100px;
     justify-self: center;
-    line-height: 2.4;
+    align-self: center;
+    text-align: center;
+    height: 100px;
     text-decoration: none;
     background-color: #E8E8E8;
-    background-image: 
-        /* gloss gradient */
-        gradient(
-            linear, 
-            left bottom, 
-            left top, 
-            color-stop(50%,rgba(255,255,255,0)), 
-            color-stop(50%,rgba(255,255,255,0.3)), 
-            color-stop(100%,rgba(255,255,255,0.2))),
-        
-        /* dark outside gradient */
-        gradient(
-            linear, 
-            left top, 
-            right top, 
-            color-stop(0%,rgba(210,210,210,0.3)), 
-            color-stop(20%,rgba(210,210,210,0)), 
-            color-stop(80%,rgba(210,210,210,0)), 
-            color-stop(100%,rgba(210,210,210,0.3))),
-        
-        /* light inner gradient */
-        gradient(
-            linear, 
-            left top, 
-            right top, 
-            color-stop(0%,rgba(255,255,255,0)), 
-            color-stop(20%,rgba(255,255,255,0.5)), 
-            color-stop(80%,rgba(255,255,255,0.5)), 
-            color-stop(100%,rgba(255,255,255,0))),        
-        
-        /* diagonal line pattern */
-        gradient(
-            linear, 
-            0% 100%, 
-            100% 0%, 
-            color-stop(0%,rgba(255,255,255,0)), 
-            color-stop(40%,rgba(255,255,255,0)), 
-            color-stop(40%,#D2D2D1), 
-            color-stop(60%,#D2D2D1), 
-            color-stop(60%,rgba(255,255,255,0)), 
-            color-stop(100%,rgba(255,255,255,0)));
-    
-        box-shadow:
-            0px -1px #fff, /* top highlight */
-            0px 1px 1px #FFFFFF; /* bottom edge */
-    
     background-size: 100%, 100%, 100%, 4px 4px;
-    
     border-radius: 10px;
-    transition: transform .1s ease-in-out;
-    
     display: inline-block;
     padding: 10px 40px 10px 40px;
-    
     color: #3A474D;
     text-transform: uppercase;
     font-family: 'TradeGothicLTStd-BdCn20','PT Sans Narrow';
     font-weight: 700;
     font-size: 32px;
-    
     text-shadow: 0px 1px #fff, 0px -1px #262F33;
+}
+.checkIn span{
+    text-align: center;
+    line-height: 2.4;
 }
 .checkIn:hover {
     color: #156aba;
@@ -153,7 +105,6 @@ body{
     grid-column: 3/-1;
     justify-self: center;
     align-self: center;
-    
     text-align: center;
     height: 100px;
     text-decoration: none;
