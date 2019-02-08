@@ -1,316 +1,65 @@
-*{
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href= "./css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Rouge+Script|Schoolbell|Oswald:700" rel="stylesheet">
 
-body{
-    background-color: #111; 
-    color: whitesmoke;
-    margin: 0 auto;
-    padding: 0;
-}
-
-.chosen {
-    width: 25%;
+        <script type="text/javascript" src="jquery-3.3.1.js"></script>
+        <title>Waukazoo</title>
+    </head>
     
-}
-
-.chosen-container{
-    height:35px !important;
-    font-size: 16px !important;
-}
-
-.top{
-    width: 100%;
-    height: 350px;
-    margin: 0 auto;
-    padding: 0;
-    background-color: whitesmoke;
-    color: #111;
-}
-
-.welcome{
-    font-family: 'Rouge Script', Geneva, Tahoma, sans-serif;
-    font-size: 10em;
-    margin-top: 0;
-    margin-left: 25px;
-    margin-bottom: 0;
-}
-
-.school{
-    width: 100%;
-    text-align: center;
-    font-size: 90px;
-    font-family: 'Schoolbell', Geneva, Tahoma, sans-serif;
-    margin-top: -70px;
-    padding: 0;
-    position: absolute;
-    display: inline-block;
+<body>
+         
+    <header class="header">
+       
+            <div class=logoimg" style="text-align: right;">
+                <img src="./imgs/logo.png" class="logo" alt="logo" style="width:300px; height:300px">
+            </div>
+            
+            <div class="top">
+            <h1 class="welcome">Welcome!</h1><br/>
+            <h1 class="school">Waukazoo Elementary<br/><span class="visitor">Visitor Check In</span></h1>
+            
+            
+        </div>
+    </header>
     
-}
+ 
+        <div class="middle">
+            
+                <a class="checkIn" href="checkin.html"><span>Check In</span></a>
+            
+                <a class="checkOut" href="checkout.html"><span>Check Out</span></a>
+            
+        </div>
 
-.visitor{
-    text-align: center;
-    font-size: 60px;
-    font-family: Arial, Geneva, Tahoma, sans-serif;
-    position: relative;
-    top: -40px;
-
-}
-
-.logo{
-    float: right;
-    clear: left;
-    margin-top: 0;
-}
-
-
-.middle{
-    height: 425px;
-    background-color: #111;
-    margin: 0 auto;
-    display: grid; 
-    grid-template-columns: 1fr 50px 1fr;
-}
-
-.checkIn {
-    grid-column: 1/2;
-    justify-self: center;
-    align-self: center;
-    text-align: center;
-    height: 100px;
-    text-decoration: none;
-    background-color: #E8E8E8;
-    background-size: 100%, 100%, 100%, 4px 4px;
-    border-radius: 10px;
-    display: inline-block;
-    padding: 10px 40px 10px 40px;
-    color: #3A474D;
-    text-transform: uppercase;
-    font-family: 'TradeGothicLTStd-BdCn20','PT Sans Narrow';
-    font-weight: 700;
-    font-size: 32px;
-    text-shadow: 0px 1px #fff, 0px -1px #262F33;
-}
-.checkIn span{
-    text-align: center;
-    line-height: 2.4;
-}
-.checkIn:hover {
-    color: #156aba;
-    text-shadow: 0px -1px #97A63A;
-    cursor: pointer;
-}
-
-.checkOut {
-    grid-column: 3/-1;
-    justify-self: center;
-    align-self: center;
-    text-align: center;
-    height: 100px;
-    text-decoration: none;
-    background-color: #E8E8E8;
-    background-size: 100%, 100%, 100%, 4px 4px;
-    border-radius: 10px;
-    display: inline-block;
-    padding: 10px 40px 10px 40px;
-    color: #3A474D;
-    text-transform: uppercase;
-    font-family: 'TradeGothicLTStd-BdCn20','PT Sans Narrow';
-    font-weight: 700;
-    font-size: 32px;
-    text-shadow: 0px 1px #fff, 0px -1px #262F33;
-}
-
-.checkOut span{
-    text-align: center;
-    line-height: 2.4;
-}
-
-.checkOut:active span{
-    transform: translate(0, 5px); /* depth of button press */
-}
-
-.checkOut:hover {
-    color: #156aba;
-    text-shadow: 0px -1px #97A63A;
-    cursor: pointer;
-}
-
-.checkOut:active {
-    box-shadow: 
-                0px 3px rgba(128,128,128,1),
-                0px 4px rgba(118,118,118,1),
-                0px 5px rgba(108,108,108,1),
-                0px 6px rgba(98,98,98,1),
-                0px 7px rgba(88,88,88,1),
-                0px 8px rgba(78,78,78,1),
-                0px 10px 2px 0px rgba(128,128,128,.6); /* shadow */
-
-}
-
-.footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-    margin-bottom: 0;
-    padding: 0;
-    background-color: whitesmoke;
-
-}
-
-#admin {
-    text-align: center;
-    background-color: #111;
-    color: whitesmoke;
-    position: relative;
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    border: 2px solid whitesmoke;
-}
-
-#admin > a {
-    background-color: #111;
-    color: whitesmoke;
-    text-decoration: none;
-    font-size: 24px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    position: relative;
-    z-index: 10;
-}
-
-#help {
-    text-align: center;
-    background-color: #111;
-    color: whitesmoke;
-    position: relative;
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    border: 2px solid whitesmoke;
-}
-
-#help > a {
-    background-color: #111;
-    color: whitesmoke;
-    text-decoration: none;
-    font-size: 24px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-
-.help{
-    float: right;
-    clear: left;
-    margin-top: 0;
-}
-
-#help > a > img {
-    padding-left: 3px;
-}
-
-.left {
-    float: left;
-}
-
-.right {
-    float: right;
-}
-
-.center {
-    margin: 5px 0 5px 0;
-    position: absolute;
-    width: 100%;
-    clear: right;
-    text-align: center;
-}
-
-/*Check In Page*/
-
-input[type=text] {
-    width: 25%;
-    height:35px;
-    padding:5px;
-    margin-bottom:5px;
-    margin-top:5px;
-    border:2px solid #ccc;
-    color:#4f4f4f;
-    font-size:16px;
-    border-radius:5px
-    }
-
-
-
-input[type=time] {
-    width: 25%;
-    height:35px;
-    padding:5px;
-    margin-bottom:5px;
-    margin-top:5px;
-    border:2px solid #ccc;
-    color:#4f4f4f;
-    font-size:16px;
-    border-radius:5px   
-}
-
-textarea[type=text] {
-    width: 25%;
-    height:35px;
-    padding:5px;
-    margin-bottom:0px;
-    margin-top:5px;
-    border:2px solid #ccc;
-    color:#4f4f4f;
-    font-size:16px;
-    border-radius:5px 
-}
-
-
-button[type=submit] {
-    width: 25%;
-    font-size:16px;
-    background:linear-gradient(#6da7dd 5%,#156aba 100%);
-    border:1px solid #156aba;
-    color:#111;
-    font-weight:700;
-    cursor:pointer;
-    border-radius:5px;
-    margin-top: 10px;
-    padding:10px 0;
-    outline:none
-    }
-
-#test-form{
-    background-color: #111;
-    margin-top: 5px;  
     
-}
+    
+    <footer>
+         <div class="footer">
+            <aside class="left" style="text-align: left">
+                <button type="button" id="admin">
+                    <a href="admin.html"><img src="./imgs/lock.png" alt="lock" style="width: 25px; height: 25px;"></a>
+                </button>
+            </aside>
+            <aside class="center" style="text-align: center">
+                <img src="./imgs/wo.png" alt="west ottawa logo" style="width: 80px; height: 40px;">
+            </aside>
+            <aside class="right" style="text-align: right">
+                <button type="button" id="help">
+                    <a href="help.html"><img src="./imgs/help.png" alt="help" style="width: 30px; height: 30px;"></a>
+                </button>
+            </aside>
+        </div>
+    </footer>
 
-.checkOutDiv {
-    position:relative; 
-    top:0; bottom:0; left:0; right:0;
-    margin-top: 200px;
-    font-size: 2em;
-}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
 
-.checkOut {
-    display: block;  
-    line-height: 35px;
-}
-
-.checkOut>input {margin-top:15px; height:30px}
+</body>
 
 
-.back {
-    background-color: transparent;
-    border: none;
-    position: absolute;
-}
-
-.backLink {
-text-decoration: none;
-    color: whitesmoke;
-
-}
+</html>
