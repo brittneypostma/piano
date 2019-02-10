@@ -3,6 +3,7 @@
 }
 
 body{
+    overflow: hidden;
     background-color: #111;
     margin: 0 auto;
     padding: 0;
