@@ -254,3 +254,10 @@ text-decoration: none;
     clear: right;
     text-align: center;
 }
+
+/*Check Out*/
+.out{
+    font-size: 3em;
+    text-align: center;
+    margin-top: -50px;
+}
