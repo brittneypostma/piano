@@ -189,6 +189,8 @@ text-decoration: none;
 }
 
 #admin {
+    outline: none;
+    cursor: pointer;
     text-align: center;
     background-color: #111;
     color: whitesmoke;
