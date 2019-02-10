@@ -3,40 +3,66 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-with, initial-scale=1">
-        <link rel="stylesheet" href= "./css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href= "./css/checkin.css">
         <link href="https://fonts.googleapis.com/css?family=Rouge+Script|Schoolbell" rel="stylesheet">
-        <title>Waukazoo Check In</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css">
+        <script type="text/javascript" src="index.js"></script>
+        <title>Waukazoo Check Out</title>
     </head>
     
 <body>
          
     <header class="header">
-       
-            <div class=logoimg" style="text-align: right;">
-                <img src="./imgs/logo.png" class="logo" alt="logo" style="width:300px; height:300px">
-            </div>
-            <div class="top">
-            <h1 class="welcome">Welcome!</h1><br/>
-            <h1 class="school">Waukazoo Elementary<br/><span class="visitor">Visitor Check In</span></h1>
-            
-            
-        </div>
-    </header>
-    
- 
-    <div class="back" style="text-align: left;"><a href="index.html" class="backLink">&nbsp; Back<br/><img src="imgs/back.png" alt="back" style="width: 50px; height: 50px;"/></a></div><br/>
-            <div class="checkOutDiv">
-                
-                <label for="timeOut" class="checkOut" style="text-align: center;">Check Out Time:<br/>
-                <input type="time" class="timeOut" id="timeOut" name="Time-Out"/></label>
-            </div>
-            <div style="text-align: center;">
-                    <button type="submit"id="submit-form">Submit</button>
-                  </div>
-         
+   <h1 class="school">Waukazoo Elementary<br/>
+      <span class="visitor">Visitor Check Out</span></h1>
+    </header> 
 
-        <footer>
+<main>
+  
+  <div class="checkInPage" id="formArea" style="text-align: center;">
+    
+    <div class=logoimg" style="text-align:center;">
+      <img src="./imgs/logo.png" class="logo" alt="logo" style="width:300px; height:300px">
+      <p class="date"><span id="date"></span><br/><span id="time"></span></p>
+    </div>
+
+  <form name="submit-to-google-sheet" action="" id="test-form" style="text-align: right;">
+    <div>
+      <h3 class="visit">VISITOR</h3>
+      <h4 class="out">Check Out</h4>
+    </div>
+    <div class="chosen-container">
+    <select class="chosen" name="Name">
+      <option>Search for Your Name</option>
+      <option>Brittney Postma</option>
+      <option>Melissa Taylor</option>
+      <option>Allison Hilldore</option>
+      <option>Krystal Knoll</option>
+      <option>Shayara Nower</option>
+      <option>Christopher Nower</option>
+      <option>Andrea Nyboer</option>
+      <option>Peggy DeMeester</option>
+    </select>
+    </div>
+
+    <br/>
+
+    <textarea type="text" id="notes" name="Notes" placeholder="Any notes about your time here." rows="4" style="text-align: right; resize: vertical;"></textarea>
+ 
+    
+    
+  </form>
+
+  </div>
+  <button class="backButton" onclick="window.location.href = './index.html';">Back</button>
+  <button form="test-form" type="submit" class="submit" id="postForm" onclick="window.location.reload()">Submit</button>
+</main>   
+    <footer>
                 <div class="footer">
                    <aside class="left" style="text-align: left">
                    <button type="button" id="admin">
@@ -48,13 +74,46 @@
                    </aside>
                    <aside class="right" style="text-align: right">
                        <button type="button" id="help">
-                           <a href="help.html"><img src="./imgs/help.png" alt="?" style="width: 30px; height: 30px;"></a>
+                           <a href="help.html"><img src="./imgs/help.png" alt="help" style="width: 30px; height: 30px;"></a>
                        </button>
                    </aside>
                </div>
-           </footer>
+           
+    
+    
+             
+    </footer>
 
-</body>
+<script type="text/javascript">
+$(".chosen").chosen();
+</script>
+<script>
+ // get a new date (locale machine date time)
+var date = new Date();
+// get the date as a string
+var n = date.toDateString();
+// get the time as a string
+var time = date.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
 
+// find the html element with the id of time
+// set the innerHTML of that element to the date a space the time
+document.getElementById('date').innerHTML = n ;
+document.getElementById('time').innerHTML = time;
+</script>
 
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzrKqVJEidj98LDaebjqwQX4Ti5tjvWcx52oLBrQwKqDH29_uo/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>   
 </html>
+    
+ 
+  
