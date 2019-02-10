@@ -7,175 +7,154 @@ body{
     margin: 0 auto;
     padding: 0;
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr 50px 1fr;
     grid-template-rows: 35vh 50vh 10vh;
     align-items: center;
-    justify-items: center;
+    
 }
 
 header {
     width: 100%;
-    margin: 0 auto;
-    height: 100%;
+    margin-top: 30px;
+    height: 375px;
     padding: 0;
     background-color: whitesmoke;
     color: #111;
     grid-column: 1/-1;
 }
 
+.chosen {
+    width: 25%;
+    
+}
 
+.chosen-container{
+    height:35px !important;
+    font-size: 16px !important;
+}
 
+.welcome{
+    font-family: 'Rouge Script', Geneva, Tahoma, sans-serif;
+    font-size: 10em;
+    margin-top: 0;
+    margin-left: 25px;
+    margin-bottom: 0;
+}
 
 .school{
     width: 100%;
     text-align: center;
-    font-size: 6em;
+    font-size: 90px;
     font-family: 'Schoolbell', Geneva, Tahoma, sans-serif;
+    margin-top: -70px;
     padding: 0;
- 
+    position: absolute;
+    display: inline-block;
+    
 }
 
 .visitor{
     text-align: center;
-    font-size: 4rem;
+    font-size: 60px;
     font-family: 'Oswald', sans-serif;
     position: relative;
     top: -40px;
 
 }
 
-
-
-.logo {
-    float: left;
+.logo{
+    float: right;
+    clear: left;
     margin-top: 0;
-    margin-bottom: -20px;
+    margin-right: 50px;
 }
 
-#date{
-    font-size: 1.5em;
-}
-
-#time{
-    font-size: 1.5em;
-}
-
-/*Check In Page*/
 
 
-.checkInPage {
-    margin-top: 10vh;
-    background-color: whitesmoke;
-    width: 40vw;
-    height: 40vh;
-    border-radius: 10px;
-    display: grid;
-    grid-template-columns: 33fr 66fr;
-    grid-template-rows: auto;
-    justify-items: stretch;
-    align-items: center;
-}
-
-.visit{
-    font-size: 5em;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 50px;
-}
-
-.chosen {
+main{
+    background-color: #111;
+    margin: 0 auto;
     width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+}
+
+
+
+.checkInButton {
+    margin-top: 10vh;
+    text-align: center;
+    height: 100px;
+    width: 250px;
+    text-decoration: none;
+    background-color: #E8E8E8;
+    background-size: 100%, 100%, 100%, 4px 4px;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px 40px 10px 40px;
+    color: #3A474D;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    text-shadow: 0px 1px #fff, 0px -1px #262F33;
+}
+
+.checkInButton span{
+    text-align: center;
+    line-height: 2.4;
+}
+.checkInButton:hover {
+    color: #156aba;
+    text-shadow: 0px -1px #07214c;
+    cursor: pointer;
+}
+
+.checkInButton:active {
+    transform: scale(.90);
+}
+
+
+
+.checkOutButton {
+    margin-top: 10vh;
+    text-align: center;
+    height: 100px;
+    width: 250px;
+    text-decoration: none;
+    background-color: #E8E8E8;
+    background-size: 100%, 100%, 100%, 4px 4px;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px 40px 10px 40px;
+    color: #3A474D;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    text-shadow: 0px 1px #fff, 0px -1px #262F33;
     
 }
 
-.chosen-container{
-    width: 100%;
-    height:35px !important;
-    font-size: 16px !important;
+.checkOutButton span{
+    text-align: center;
+    line-height: 2.4;
 }
 
-datalist{
-    width: 100%;
+.checkOutButton:active {
+    transform: scale(.90);
 }
 
-input[type=text] {
-    width: 100%;
-    height:35px;
-    padding:5px;
-    margin-bottom:5px;
-    margin-top:5px;
-    background: none;
-    border:none;
-    border-bottom: 1px solid black;
-    color:#4f4f4f;
-    font-size:16px;
-    border-radius:5px
-    }
-
-
-
-textarea[type=text] {
-    width: 100%;
-    height:50px;
-    padding:5px;
-    margin-bottom:0px;
-    margin-top:5px;
-    background: none;
-    border:none;
-    border-bottom: 1px solid black;
-    color:#4f4f4f;
-    font-size:16px;
-    border-radius:5px 
+.checkOutButton:hover {
+    color: #156aba;
+    text-shadow: 0px -1px #07214c;
+    cursor: pointer;
 }
 
 
-.submit{
-    float: right;
-    width: 25%;
-    font-size:16px;
-    background:linear-gradient(#6da7dd 5%,#156aba 100%);
-    border:1px solid #156aba;
-    color:#111;
-    font-weight:700;
-    cursor:pointer;
-    border-radius:5px;
-    margin-top: 10px;
-    padding:10px 0;
-    outline:none;
-    }
-
-.backButton{
-    width: 25%;
-    font-size:16px;
-    background:linear-gradient(#6da7dd 5%,#156aba 100%);
-    border:1px solid #156aba;
-    color:#111;
-    font-weight:700;
-    cursor:pointer;
-    border-radius:5px;
-    margin-top: 10px;
-    padding:10px 0;
-    outline:none;
-}
-
-
-
-.checkOut>input {margin-top:15px; height:30px}
-
-
-.back {
-    background-color: transparent;
-    border: none;
-    position: absolute;
-}
-
-.backLink {
-text-decoration: none;
-    color: whitesmoke;
-
-}
-
-/*Footer*/
 .footer{
     position: fixed;
     left: 0;
@@ -257,9 +236,4 @@ text-decoration: none;
     text-align: center;
 }
 
-/*Check Out*/
-.out{
-    font-size: 3em;
-    text-align: center;
-    margin-top: -50px;
-}
+
