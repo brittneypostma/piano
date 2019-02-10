@@ -31,7 +31,7 @@
       <p class="date"><span id="date"></span><br/><span id="time"></span></p>
     </div>
 
-  <form id="postForm" style="text-align: right;">
+  <form name="submit-to-google-sheet" id="test-form" style="text-align: right;">
     <div>
       <h3 class="visit">VISITOR</h3>
     </div>
@@ -51,11 +51,11 @@
 
     <br/>
 
-    <input required type="text" name="Student" id=="text" placeholder="Student's First & Last Name"style="text-align: right;"/>
+    <input required type="text" name="Student" id="student" placeholder="Student's First & Last Name"style="text-align: right;"/>
 
     <br/>
 
-    <input required type="text" list="select" name="Class" id="class" placeholder="Pick location or type teacher's name here &#9660;" style="text-align: right;"/>
+    <input required type="text" list="select" name="Location" id="class" placeholder="Pick location or type teacher's name here &#9660;" style="text-align: right;"/>
     <datalist class="location" id="select" onchange="onSelectChange()" name="Location">
       <option>---choose a location or type teacher's name---</option>
       <option value="Lunch Room"></option>
@@ -66,14 +66,15 @@
 
     <br/>
 
-    <textarea type="text" name="notes" placeholder="What will you be doing?" rows="4" style="text-align: right; resize: vertical;"></textarea>
+    <textarea type="text" id="notes" name="Notes" placeholder="What will you be doing?" rows="4" style="text-align: right; resize: vertical;"></textarea>
  
+    
     
   </form>
 
   </div>
   <button class="backButton" onclick="window.location.href = './index.html';">Back</button>
-  <button type="submit" class="submit" id="postForm">Submit</button>
+  <button form="test-form" type="submit" class="submit" id="postForm">Submit</button>
 </main>   
     <footer>
                 <div class="footer">
@@ -106,12 +107,26 @@ var date = new Date();
 // get the date as a string
 var n = date.toDateString();
 // get the time as a string
-var time = date.toLocaleTimeString();
+var time = date.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
 
 // find the html element with the id of time
 // set the innerHTML of that element to the date a space the time
 document.getElementById('date').innerHTML = n ;
 document.getElementById('time').innerHTML = time;
+</script>
+<script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzrKqVJEidj98LDaebjqwQX4Ti5tjvWcx52oLBrQwKqDH29_uo/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
 </script>
 </body>   
 </html>
