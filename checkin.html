@@ -18,10 +18,10 @@
             	download: true,
                 header: true,
             	complete: function(results) {
-                    console.log(results);
                     var volunteerSelect = document.getElementById('volunteersList');
                     var frag = document.createDocumentFragment();
                     results.data.forEach(function(row){
+                        console.log(row);
                         elOption = frag.appendChild(document.createElement('option'));
                         elOption.text = row.firstname + " " + row.lastname;
                         volunteerSelect.appendChild(elOption);
