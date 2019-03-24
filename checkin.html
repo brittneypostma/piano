@@ -14,12 +14,12 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.6.3/papaparse.min.js"></script>
         
         <script>
-            let volunteerSelect = document.getElementById('volunteersList');
             Papa.parse("https://raw.githubusercontent.com/sballgirl11/sballgirl11.github.io/master/Waukazoo%20Volunteer%20List.csv", {
             	download: true,
                 header: true,
             	complete: function(results) {
             		console.log(results);
+                    var volunteerSelect = document.getElementById('volunteersList');
                     var frag = document.createDocumentFragment();
                     results.data.forEach(function(row){
                         elOption = frag.appendChild(document.createElement('option'));
