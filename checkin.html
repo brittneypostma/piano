@@ -18,12 +18,12 @@
             	download: true,
                 header: true,
             	complete: function(results) {
-            		console.log(results);
+                    console.log(results);
                     var volunteerSelect = document.getElementById('volunteersList');
                     var frag = document.createDocumentFragment();
                     results.data.forEach(function(row){
                         elOption = frag.appendChild(document.createElement('option'));
-                        elOption.text = row[0] + " " + row[1];
+                        elOption.text = row.firstname + " " + row.lastname;
                         volunteerSelect.appendChild(elOption);
                     });
             	}
