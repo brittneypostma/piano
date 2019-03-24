@@ -21,11 +21,11 @@
             	complete: function(results) {
             		console.log(results);
                     var frag = document.createDocumentFragment();
-                    results.data.forEach(row) {
+                    results.data.forEach(function(row){
                         elOption = frag.appendChild(document.createElement('option'));
                         elOption.text = row[0] + " " + row[1];
                         volunteerSelect.appendChild(elOption);
-                    }
+                    });
             	}
             });
         </script>
