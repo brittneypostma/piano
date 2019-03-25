@@ -57,36 +57,35 @@
 <body>
          
     <header class="header">
-   <h1 class="school">Waukazoo Elementary<br/>
-      <span class="visitor">Visitor Check Out</span></h1>
+   <h1 class="schoolCheck">Waukazoo Elementary<br/>
+      <span class="visitorCheck">Visitor Check Out</span></h1>
     </header> 
 
 <main>
   
   <div class="checkInPage" id="formArea" style="text-align: center;">
     
-    <div class="logoimg" style="text-align:center;">
+    <div class="logoDiv" style="text-align:center;">
       <img src="./imgs/logo.png" class="logo" alt="logo" style="width:250px; height:250px">
       <p class="date"><span id="date"></span><br/><span id="time"></span></p>
     </div>
 
-  <form name="submit-to-google-sheet" action="" id="test-form" style="text-align: right;">
-    <div>
-      <h3 class="visit">VISITOR</h3>
-      <h4 class="out">Check Out</h4>
-    </div>
-    <div class="chosen-container">
-    <select class="chosen" name="Name" id="volunteersList">
-      <option selected>Search for Your Name</option>
-    </select>
-    </div>
+    <form name="submit-to-google-sheet" action="" id="test-form" style="text-align: right;">
+      <div>
+        <h3 class="visit">VISITOR</h3>
+        <h4 class="out">Check Out</h4>
+      </div>
+      <div class="wrapperOut">
+      <div class="chosen-container">
+      <select class="chosen" name="Name" id="volunteersList">
+        <option selected>Search for Your Name</option>
+      </select>
+      </div>
 
     <br/>
 
     <textarea type="text" id="notes" name="Notes" placeholder="Any notes about your time here." rows="4" style="text-align: right; resize: vertical;"></textarea>
- 
-    
-    
+    </div>
   </form>
 
   </div>
