@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald|Rouge+Script|Schoolbell');
 
+
 *{
     box-sizing: border-box;
 }
@@ -212,6 +213,8 @@ main{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     position: relative;
     z-index: 10;
+    position: relative;
+    top: 8px; 
 }
 
 #help {
@@ -229,6 +232,8 @@ main{
     background-color: #111;
     color: whitesmoke;
     text-decoration: none;
+    position: relative;
+    top: 6px;  
     font-size: 24px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
