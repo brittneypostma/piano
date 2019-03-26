@@ -522,7 +522,7 @@ text-decoration: none;
     .visitor {
         font-size: 2.5rem;
     }
-    .checkInPage {
+    .checkOutPage {
         background-color: whitesmoke;
         width: 70%;
         margin: 10px 0 0 -55px;
@@ -533,6 +533,7 @@ text-decoration: none;
         grid-template-columns: 100%;
         grid-template-rows: 1fr 35px 1fr;
     }
+    
     
     .logo {
         display: none;
