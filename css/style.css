@@ -514,6 +514,14 @@ text-decoration: none;
 
 
 @media only screen and (max-width: 1067px) {
+    .school {
+        margin-top: -40px;
+        line-height: 1.5;
+        font-size: 3em;
+    }
+    .visitor {
+        font-size: 2.5rem;
+    }
     .checkInPage {
         background-color: whitesmoke;
         width: 70%;
