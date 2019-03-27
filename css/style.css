@@ -27,19 +27,6 @@ header {
     grid-column: 1/-1;
 }
 
-.chosen {
-    width: 100%;
-    position: relative;
-}
-
-.chosen-container{
-    width: 100%;
-    position: relative;
-    height:35px !important;
-    font-size: 16px !important;
-    margin-top: -15px;
-}
-
 .welcome{
     font-family: 'Rouge Script', Geneva, Tahoma, sans-serif;
     font-size: 7em;
@@ -303,12 +290,25 @@ datalist{
     width: 100%;
 }
 
+.chosen {
+    width: 100%;
+    position: relative;
+}
+
+.chosen-container{
+    width: 100%;
+    position: relative;
+    height:35px !important;
+    font-size: 16px !important;
+    margin-top: -15px;
+}
+
 input[type=text] {
     position: relative;
     width: 100%;
     height:35px;
     padding:5px;
-    margin: -35px 0 0 -45px;
+    margin: -35px auto;
     background: none;
     border:none;
     border-bottom: 1px solid black;
