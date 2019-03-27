@@ -261,11 +261,7 @@ main{
 .checkInPage {
     background-color: whitesmoke;
     width: 50vw;
-    left: 25%;
-    top: 38%;
-    bottom: 50%;
     margin: 10px auto;
-    position: fixed;
     height: 40vh;
     border-radius: 10px;
     display: grid;
@@ -564,12 +560,10 @@ text-decoration: none;
     
     .checkInPage {
     background-color: whitesmoke;
-    width: 60%;
-    left: 25%;
-    top: 38%;
-    bottom: 50%;
+    width: 100%;
+    left: 50%;
     margin: 2px auto;
-    position: fixed;
+    position: relative;
     height: 45vh;
     border-radius: 10px;
     display: grid;
