@@ -28,13 +28,16 @@ header {
 }
 
 .chosen {
-    width: 25%;
-    
+    width: 100%;
+    position: relative;
 }
 
 .chosen-container{
+    width: 100%;
+    position: relative;
     height:35px !important;
     font-size: 16px !important;
+    margin-top: -15px;
 }
 
 .welcome{
@@ -294,19 +297,6 @@ main{
 .date {
     margin-left: -35px;
     margin-top: -10px;
-}
-
-.chosen {
-    width: 100%;
-    position: relative;
-}
-
-.chosen-container{
-    width: 100%;
-    position: relative;
-    height:35px !important;
-    font-size: 16px !important;
-    margin-top: -15px;
 }
 
 datalist{
