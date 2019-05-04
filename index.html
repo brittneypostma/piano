@@ -8,138 +8,75 @@
 </head>
 
 <body>
-
-
-  <div class="keys">
-
-    <!--
-        <div data-key="81" class="key">
-          <kbd>Q</kbd>
-          <span class="sound">hihat</span>
-        </div>
-        <div data-key="87" class="key">
-          <kbd>W</kbd>
-          <span class="sound">kick</span>
-        </div>
-        <div data-key="69" class="key">
-          <kbd>E</kbd>
-          <span class="sound">openhat</span>
-        </div>
-        <div data-key="82" class="key">
-          <kbd>R</kbd>
-          <span class="sound">boom</span>
-        </div>
-        <div data-key="84" class="key">
-          <kbd>T</kbd>
-          <span class="sound">ride</span>
-        </div>
-        <div data-key="89" class="key">
-          <kbd>Y</kbd>
-          <span class="sound">snare</span>
-        </div>
-        <div data-key="85" class="key">
-          <kbd>U</kbd>
-          <span class="sound">tom</span>
-        </div>
-        <div data-key="73" class="key">
-          <kbd>I</kbd>
-          <span class="sound">tink</span>
-        </div>
-        <div data-key="79" class="key">
-            <kbd>O</kbd>
-            <span class="sound">tom</span>
-          </div>
-          <div data-key="80" class="key">
-            <kbd>P</kbd>
-            <span class="sound">tink</span>
-          </div>
-        -->
-
-    <div data-key="65" class="key">
+  <h1 class="unicorn">Piano Kit<br>
+  <span class="subhead">You can click on the notes or push the letters below to play the keys.</span></h1>
+  <ul class="set">
+    
+    <li data-key="65" class="key white a2">
       <kbd>A</kbd>
       <span class="sound">a</span>
-    </div>
-    <div data-key="83" class="key">
+    </li>
+    <li data-key="87" class="key black bFlat">
+      <kbd>W</kbd>
+      <span class="sound high">b&#9837;</span>
+    </li>
+    <li data-key="83" class="key white b">
       <kbd>S</kbd>
       <span class="sound">b</span>
-    </div>
-    <div data-key="68" class="key">
+    </li>
+    <li data-key="68" class="key white c3">
       <kbd>D</kbd>
       <span class="sound">c</span>
-    </div>
-    <div data-key="70" class="key">
+    </li>
+    <li data-key="82" class="key black cSharp">
+      <kbd>R</kbd>
+      <span class="sound high">c&#35;</span>
+    </li>
+    <li data-key="70" class="key white d">
       <kbd>F</kbd>
       <span class="sound">d</span>
-    </div>
-    <div data-key="71" class="key">
+    </li>
+    <li data-key="84" class="key black eFlat">
+      <kbd>T</kbd>
+      <span class="sound high">e&#9837;</span>
+    </li>
+    <li data-key="71" class="key white e">
       <kbd>G</kbd>
       <span class="sound">e</span>
-    </div>
-    <div data-key="72" class="key">
+    </li>
+    <li data-key="72" class="key white f">
       <kbd>H</kbd>
       <span class="sound">f</span>
-    </div>
-    <div data-key="74" class="key">
+    </li>
+    <li data-key="89" class="key black fSharp">
+      <kbd>Y</kbd>
+      <span class="sound high">f&#35;</span>
+    </li>
+    <li data-key="74" class="key white g">
       <kbd>J</kbd>
       <span class="sound">g</span>
-    </div>
-    <div data-key="75" class="key">
+    </li>
+    <li data-key="85" class="key black aFlat">
+      <kbd>U</kbd>
+      <span class="sound high">a&#9837;</span>
+    </li>
+    <li data-key="75" class="key white a">
       <kbd>K</kbd>
       <span class="sound">a</span>
-    </div>
-    <div data-key="76" class="key">
+    </li>
+    <li data-key="73" class="key black bFlat">
+      <kbd>I</kbd>
+      <span class="sound high">b&#9837;</span>
+    </li>
+    <li data-key="76" class="key white b">
       <kbd>L</kbd>
       <span class="sound">b</span>
-    </div>
-    <div data-key="186" class="key">
+    </li>
+    <li data-key="186" class="key white c4">
       <kbd>;</kbd>
       <span class="sound">c</span>
-    </div>
-
-    <!--
-      <div data-key="90" class="key">
-          <kbd>Z</kbd>
-          <span class="sound">hihat</span>
-        </div>
-        <div data-key="88" class="key">
-          <kbd>X</kbd>
-          <span class="sound">kick</span>
-        </div>
-        <div data-key="67" class="key">
-          <kbd>C</kbd>
-          <span class="sound">openhat</span>
-        </div>
-        <div data-key="86" class="key">
-          <kbd>V</kbd>
-          <span class="sound">boom</span>
-        </div>
-        <div data-key="66" class="key">
-          <kbd>B</kbd>
-          <span class="sound">ride</span>
-        </div>
-        <div data-key="78" class="key">
-          <kbd>N</kbd>
-          <span class="sound">snare</span>
-        </div>
-        <div data-key="77" class="key">
-          <kbd>M</kbd>
-          <span class="sound">tom</span>
-        </div>
-        <div data-key="188" class="key">
-          <kbd>,</kbd>
-          <span class="sound">tink</span>
-        </div>
-        <div data-key="190" class="key">
-            <kbd>.</kbd>
-            <span class="sound">tom</span>
-          </div>
-          <div data-key="191" class="key">
-            <kbd>&#47;</kbd>
-            <span class="sound">tink</span>
-          </div>
-        -->
-
-  </div>
+    </li>
+  </ul>
 
   <audio class="audio" data-key="65" src="sounds/A2.wav"></audio>
   <audio class="audio" data-key="83" src="sounds/B2.wav"></audio>
@@ -151,6 +88,13 @@
   <audio class="audio" data-key="75" src="sounds/A3.wav"></audio>
   <audio class="audio" data-key="76" src="sounds/B3.wav"></audio>
   <audio class="audio" data-key="186" src="sounds/C4.wav"></audio>
+
+  <audio class="audio" data-key="87" src="sounds/Bb2.wav"></audio>
+  <audio class="audio" data-key="82" src="sounds/Db3.wav"></audio>
+  <audio class="audio" data-key="84" src="sounds/Eb3.wav"></audio>
+  <audio class="audio" data-key="89" src="sounds/Gb3.wav"></audio>
+  <audio class="audio" data-key="85" src="sounds/Ab3.wav"></audio>
+  <audio class="audio" data-key="73" src="sounds/Bb3.wav"></audio>
 
   <script>
     function playSound(e) {
