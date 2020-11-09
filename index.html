@@ -72,7 +72,7 @@
       <kbd>L</kbd>
       <span class="sound">b</span>
     </li>
-    <li data-key="59" class="key white c4">
+    <li data-key="186" class="key white c4"> 
       <kbd>;</kbd>
       <span class="sound">c</span>
     </li>
@@ -87,7 +87,7 @@
   <audio class="audio" data-key="74" src="sounds/G3.wav"></audio>
   <audio class="audio" data-key="75" src="sounds/A3.wav"></audio>
   <audio class="audio" data-key="76" src="sounds/B3.wav"></audio>
-  <audio class="audio" data-key="59" src="sounds/C4.wav"></audio>
+  <audio class="audio" data-key="186" src="sounds/C4.wav"></audio> 
 
   <audio class="audio" data-key="87" src="sounds/Bb2.wav"></audio>
   <audio class="audio" data-key="82" src="sounds/Db3.wav"></audio>
@@ -150,7 +150,12 @@
 
     keys.forEach(key => key.addEventListener('transitionend', removeTranstion));
 
-    window.addEventListener('keydown', playSound);
+
+   window.addEventListener('keydown', (e) => {
+      if(e.repeat) return;   //The return on repeat property will block the constant key press on holding a key. 
+      playSound(e)
+    });
+
   </script>
 
 
