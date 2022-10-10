@@ -4,161 +4,149 @@
 <head>
   <meta charset="UTF-8">
   <title>JS Piano Kit</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+        href="style.css">
 </head>
 
 <body>
   <h1 class="unicorn">Piano Kit<br>
-  <span class="subhead">You can click on the notes or push the letters below to play the keys.</span></h1>
+    <span class="subhead">You can click on the notes or push the letters below to play the keys.</span>
+  </h1>
   <ul class="set">
-    
-    <li data-key="65" class="key white a2">
+
+    <li data-key="65"
+        class="key white a2">
       <kbd>A</kbd>
       <span class="sound">a</span>
     </li>
-    <li data-key="87" class="key black bFlat">
+    <li data-key="87"
+        class="key black bFlat">
       <kbd>W</kbd>
       <span class="sound high">b&#9837;</span>
     </li>
-    <li data-key="83" class="key white b">
+    <li data-key="83"
+        class="key white b">
       <kbd>S</kbd>
       <span class="sound">b</span>
     </li>
-    <li data-key="68" class="key white c3">
+    <li data-key="68"
+        class="key white c3">
       <kbd>D</kbd>
       <span class="sound">c</span>
     </li>
-    <li data-key="82" class="key black cSharp">
+    <li data-key="82"
+        class="key black cSharp">
       <kbd>R</kbd>
       <span class="sound high">c&#35;</span>
     </li>
-    <li data-key="70" class="key white d">
+    <li data-key="70"
+        class="key white d">
       <kbd>F</kbd>
       <span class="sound">d</span>
     </li>
-    <li data-key="84" class="key black eFlat">
+    <li data-key="84"
+        class="key black eFlat">
       <kbd>T</kbd>
       <span class="sound high">e&#9837;</span>
     </li>
-    <li data-key="71" class="key white e">
+    <li data-key="71"
+        class="key white e">
       <kbd>G</kbd>
       <span class="sound">e</span>
     </li>
-    <li data-key="72" class="key white f">
+    <li data-key="72"
+        class="key white f">
       <kbd>H</kbd>
       <span class="sound">f</span>
     </li>
-    <li data-key="89" class="key black fSharp">
+    <li data-key="89"
+        class="key black fSharp">
       <kbd>Y</kbd>
       <span class="sound high">f&#35;</span>
     </li>
-    <li data-key="74" class="key white g">
+    <li data-key="74"
+        class="key white g">
       <kbd>J</kbd>
       <span class="sound">g</span>
     </li>
-    <li data-key="85" class="key black aFlat">
+    <li data-key="85"
+        class="key black aFlat">
       <kbd>U</kbd>
       <span class="sound high">a&#9837;</span>
     </li>
-    <li data-key="75" class="key white a">
+    <li data-key="75"
+        class="key white a">
       <kbd>K</kbd>
       <span class="sound">a</span>
     </li>
-    <li data-key="73" class="key black bFlat">
+    <li data-key="73"
+        class="key black bFlat">
       <kbd>I</kbd>
       <span class="sound high">b&#9837;</span>
     </li>
-    <li data-key="76" class="key white b">
+    <li data-key="76"
+        class="key white b">
       <kbd>L</kbd>
       <span class="sound">b</span>
     </li>
-    <li data-key="59" class="key white c4"> 
+    <li data-key="59"
+        class="key white c4">
       <kbd>;</kbd>
       <span class="sound">c</span>
     </li>
   </ul>
 
-  <audio class="audio" data-key="65" src="sounds/A2.wav"></audio>
-  <audio class="audio" data-key="83" src="sounds/B2.wav"></audio>
-  <audio class="audio" data-key="68" src="sounds/C3.wav"></audio>
-  <audio class="audio" data-key="70" src="sounds/D3.wav"></audio>
-  <audio class="audio" data-key="71" src="sounds/E3.wav"></audio>
-  <audio class="audio" data-key="72" src="sounds/F3.wav"></audio>
-  <audio class="audio" data-key="74" src="sounds/G3.wav"></audio>
-  <audio class="audio" data-key="75" src="sounds/A3.wav"></audio>
-  <audio class="audio" data-key="76" src="sounds/B3.wav"></audio>
-  <audio class="audio" data-key="59" src="sounds/C4.wav"></audio> 
+  <audio class="audio"
+         data-key="a"
+         src="sounds/A2.wav"></audio>
+  <audio class="audio"
+         data-key="w"
+         src="sounds/B2.wav"></audio>
+  <audio class="audio"
+         data-key="s"
+         src="sounds/C3.wav"></audio>
+  <audio class="audio"
+         data-key="d"
+         src="sounds/D3.wav"></audio>
+  <audio class="audio"
+         data-key="r"
+         src="sounds/E3.wav"></audio>
+  <audio class="audio"
+         data-key="f"
+         src="sounds/F3.wav"></audio>
+  <audio class="audio"
+         data-key="t"
+         src="sounds/G3.wav"></audio>
+  <audio class="audio"
+         data-key="g"
+         src="sounds/A3.wav"></audio>
+  <audio class="audio"
+         data-key="h"
+         src="sounds/B3.wav"></audio>
+  <audio class="audio"
+         data-key="y"
+         src="sounds/C4.wav"></audio>
 
-  <audio class="audio" data-key="87" src="sounds/Bb2.wav"></audio>
-  <audio class="audio" data-key="82" src="sounds/Db3.wav"></audio>
-  <audio class="audio" data-key="84" src="sounds/Eb3.wav"></audio>
-  <audio class="audio" data-key="89" src="sounds/Gb3.wav"></audio>
-  <audio class="audio" data-key="85" src="sounds/Ab3.wav"></audio>
-  <audio class="audio" data-key="73" src="sounds/Bb3.wav"></audio>
+  <audio class="audio"
+         data-key="j"
+         src="sounds/Bb2.wav"></audio>
+  <audio class="audio"
+         data-key="u"
+         src="sounds/Db3.wav"></audio>
+  <audio class="audio"
+         data-key="k"
+         src="sounds/Eb3.wav"></audio>
+  <audio class="audio"
+         data-key="i"
+         src="sounds/Gb3.wav"></audio>
+  <audio class="audio"
+         data-key="l"
+         src="sounds/Ab3.wav"></audio>
+  <audio class="audio"
+         data-key=";"
+         src="sounds/Bb3.wav"></audio>
 
-  <script>
-    function playSound(e) {
-      const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-      const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
-
-      let code = this;
-      if (e.keyCode) {
-        // it was a keypress, get the keycode as usual
-        code = e.keyCode;
-      } else {
-        // it was a click.  Read the keycode from the div that was clicked
-        code = this.dataset.key;
-      }
-
-      if (!audio) return;
-      audio.currentTime = 0;
-      audio.play();
-      key.classList.add('playing');
-    }
-
-
-    function removeTranstion(e) {
-      if (e.propertyName !== 'transform') return;
-      this.classList.remove('playing');
-    }
-
-
-    const allKeys = document.querySelectorAll('.key').length;
-
-    for (let i = 0; i < allKeys; i++) {
-      document.querySelectorAll('.key')[i].addEventListener('click', function (e) {
-        let code = this.dataset.key;
-        const audio = document.querySelector(`audio[data-key="${code}"]`);
-        const key = document.querySelector(`.key[data-key="${code}"]`);
-
-        if (e.keyCode) {
-          // it was a keypress, get the keycode as usual
-          code = e.keyCode;
-        } else {
-          // it was a click.  Read the keycode from the div that was clicked
-          code = this.dataset.key;
-        }
-
-        if (!audio) return;
-        audio.currentTime = 0;
-        audio.play();
-        key.classList.add('playing');
-      })
-    }
-
-    const keys = document.querySelectorAll('.key');
-
-    keys.forEach(key => key.addEventListener('transitionend', removeTranstion));
-
-
-   window.addEventListener('keydown', (e) => {
-      if(e.repeat) return;   //The return on repeat property will block the constant key press on holding a key. 
-      playSound(e)
-    });
-
-  </script>
-
-
+  <script src="./index.js" />
 </body>
 
 </html>
